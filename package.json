@@ -1,0 +1,16 @@
+{
+  "name": "contaux-laudos",
+  "version": "1.0.0",
+  "description": "Contaux - Portal de Laudos Periciais (GitHub Pages)",
+  "scripts": {
+    "build": "echo Build concluido - site estatico pronto para deploy",
+    "deploy": "git add -A && git commit -m \"deploy: atualizar site\" && git push origin main"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adrianohermida/contaux-laudos.git"
+  },
+  "author": "Adriano Hermida",
+  "license": "UNLICENSED",
+  "private": true
+}
