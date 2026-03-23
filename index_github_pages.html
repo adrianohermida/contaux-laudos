@@ -80,8 +80,7 @@ p{font-size:14px;color:#64748b;line-height:1.7;margin-bottom:16px}
 
 <script>
 var SUPABASE_URL  = 'https://sspvizogbcyigquqycsz.supabase.co';
-var SUPABASE_ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNzcHZpem9nYmN5aWdxdXF5Y3N6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njc3OTYxNTYsImV4cCI6MjA4MzM3MjE1Nn0.C1P4wlanONGA9EDNR4nBujJ136sSXlZCioFyd_CWIfs
-';
+var SUPABASE_ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNzcHZpem9nYmN5aWdxdXF5Y3N6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njc3OTYxNTYsImV4cCI6MjA4MzM3MjE1Nn0.C1P4wlanONGA9EDNR4nBujJ136sSXlZCioFyd_CWIfseyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNzcHZpem9nYmN5aWdxdXF5Y3N6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njc3OTYxNTYsImV4cCI6MjA4MzM3MjE1Nn0.C1P4wlanONGA9EDNR4nBujJ136sSXlZCioFyd_CWIfs';
 var token = null;
 var dadosLaudo = null;
 
@@ -133,9 +132,8 @@ function mostrarLaudo() {
   show('stateOk');
   // O HTML do laudo fica no Drive - GAS o serve via URL do Web App
   // Injeta o token no src para o Web App saber qual HTML retornar
-  var webAppUrl = 'https://script.google.com/macros/s/AKfycby_OjjBOBh9B_a27zx4fnPFOkcodCKxzLvePYsMAL3mIJbRvVUD1aZZ5peBUMq8exPt/exec';';
-  if (webAppUrl && webAppUrl !== 'https://script.google.com/macros/s/AKfycby_OjjBOBh9B_a27zx4fnPFOkcodCKxzLvePYsMAL3mIJbRvVUD1aZZ5peBUMq8exPt/exec';') {
-    var frame = document.getElementById('laudo-frame');
+  var webAppUrl = 'https://script.google.com/macros/s/AKfycby_OjjBOBh9B_a27zx4fnPFOkcodCKxzLvePYsMAL3mIJbRvVUD1aZZ5peBUMq8exPt/exec';
+      var frame = document.getElementById('laudo-frame');
     frame.style.display = 'block';
     frame.src = webAppUrl + '?t=' + token;
   } else {
